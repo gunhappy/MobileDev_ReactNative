@@ -1,9 +1,8 @@
 import { Button, Image, StyleSheet, Text, TextInput, View } from 'react-native'
 
 import React from 'react'
-import WelcomeScreen from './screen/WelcomeScreen'
 
-export default class App extends React.Component {
+export default class LogoutScreen extends React.Component {
 
   constructor(props){
     super(props)
@@ -12,7 +11,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <WelcomeScreen/>
+        <Text>LogoutScreen</Text>
       </View>
     )
   }
@@ -20,9 +19,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: '#fff'
   }
 })
