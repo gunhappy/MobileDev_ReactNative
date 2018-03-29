@@ -1,7 +1,8 @@
-import { Button, Image, StyleSheet, Text, TextInput, View } from 'react-native'
+import { Button, Image, StyleSheet, Text, TextInput, View, KeyboardAvoidingView } from 'react-native'
 
 import React from 'react'
 import WelcomeScreen from './screen/WelcomeScreen'
+import RegisterScreen from './screen/RegisterScreen'
 
 export default class App extends React.Component {
 
@@ -12,7 +13,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <WelcomeScreen/>
+        <RegisterScreen/>
       </View>
     )
   }
@@ -21,8 +22,6 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: '#fff'
   }
 })
